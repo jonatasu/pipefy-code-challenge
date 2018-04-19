@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pipefy - Coding Challenge Party</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="author" content="Jônatas Filipe Vieira">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-4 text-center">
+                <h1> <img src="pipefy.png" alt="logo da Pipefy"> </h1>
+                <h2>Coding Challenge</h2>
+                <a href="papel-timbale-pipefy.pdf" target="_blank" class="mt-5 btn btn-sm btn-secondary">Ver desafio &raquo;</a>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-2 col-lg-1">               
+                <form class="form">
+                    <div class="form-group">
+                        <label for="fdl_valor">Valor:</label>
+                        <input type="number" class="form-control" name="fdl_valor" id="fdl_valor" aria-describedby="emailHelpId" min="1" max="9" oninput="buildResult(this.value)" onchange="buildResult(this.value)">
+                        <small id="emailHelpId" class="form-text text-muted">Digite algum número entre 1 e 9.</small>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-4">
+                <div id="resultado"></div>
+                <div id="msgErro" class="alert alert-danger mt-5" role="alert" style="opacity:0">
+                    O número inserido <strong>não é válido</strong> para esse algorítimo ou o campo está vazio.<br>
+                    Peço que digite somente números de 1 a 9. Obrigado!
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="funcao.js"></script>
+</body>
+</html>
