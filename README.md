@@ -1,4 +1,4 @@
-![alt text](https://raw.githubusercontent.com/jonatasu/pipefy-code-challenge/blob/master/pipefy.png)
+![alt text](https://raw.githubusercontent.com/jonatasu/pipefy-code-challenge/master/pipefy.png)
 
 #Coding Challenge Pipefy
 
